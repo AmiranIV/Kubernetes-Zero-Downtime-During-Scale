@@ -10,7 +10,7 @@ Built and deployed a Nodejs webserver on Kubernetes, ensuring zero downtime duri
 
 Built the Docker image for the webserver.
 
-Pushed the image to a dedicated Amazon ECR repository.
+Pushed the image to DockerHub.
 
 Deployment and Service:
 
