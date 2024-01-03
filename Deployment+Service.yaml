@@ -1,3 +1,5 @@
+# k8s/deployment-demo.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -18,6 +20,11 @@ spec:
       containers:
       - name: server
         image: amiraniv/zero-node:v1.0
+        resources:
+          requests:
+            cpu: "300m"
+          limits:
+            cpu: "300m"
         livenessProbe:
           httpGet:
             path: "/health"
