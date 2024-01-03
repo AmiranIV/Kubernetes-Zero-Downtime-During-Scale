@@ -39,7 +39,7 @@ process.on('SIGTERM', () => {
       server.close(() => {
         console.log('HTTP server closed');
       });
-    }, 2000); // You can adjust the delay time as needed
+    }, 15000); // You can adjust the delay time as needed
   } else {
     server.close(() => {
       console.log('HTTP server closed');
